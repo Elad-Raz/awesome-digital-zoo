@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
+
+.main-headline {
+  text-decoration: none;
+  color: black;
+}
+
+.second-headline {
+  font-family: Rubik Vinyl, cursive;
+  font-size: 50px;
+  text-align: center;
+  margin: 35px, 0, 20px, 0;
+}
+
 body {
   background-color: rgb(77, 199, 83);
 }
@@ -6,13 +21,94 @@ div.navigator {
 }
 
 h1 {
+  text-align: center;
+  text-shadow: 12px -6px 7px rgba(36, 102, 12, 0.76);
+  font-family: Rubik Vinyl, cursive;
+  font-size: 60px;
 }
 
-div.articale-left {
+div.navigator {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-div.articale-right {
+a {
+  margin: 5px;
+  border-radius: 5px;
 }
 
-div.trivia {
+article {
+  display: inline-block;
+  width: 46%;
+  border-radius: 30px;
+  border-style: dashed;
+  border-color: black;
+  margin: 50px 10px 10px 10px;
+  padding: 10px;
+}
+
+.footer {
+  margin-top: 30%;
+  text-align: center;
+}
+
+.register-fieldset {
+  text-align: right;
+  font-family: "Suez One", serif;
+  font-size: 16px;
+  direction: rtl;
+}
+
+.legened-register {
+  text-align: right;
+  font-family: "Suez One", serif;
+  font-size: 20px;
+  direction: rtl;
+}
+
+.register-fieldset summary {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.register-fieldset label {
+  display: inline-block;
+  margin-top: 10px;
+}
+.register-fieldset-row-2 {
+  margin-top: 15px;
+}
+.register-fieldset input {
+  margin: 8px;
+}
+
+.register-gender {
+  /* display: inline-block; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+div.register-over-all input,
+label,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+div.register-over-all button {
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  border-style: solid;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 30px;
+}
+.register-submit {
+  background-color: rgb(105, 175, 153);
+  margin-right: 25%;
+}
+.register-reset {
+  background-color: rgb(193, 70, 70);
+  margin-right: 25%;
 }

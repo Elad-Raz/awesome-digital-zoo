@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header><h1>please register</h1></header>
+    <header>
+      <h1><a class="main-headline" href="./index.html"> my digital zoo</a></h1>
+      <h3 class="second-headline">please register</h3>
+    </header>
     <nav>
       <div class="navigator">
         <a href="./index.html">main page</a>
@@ -20,6 +23,100 @@
         <a href="./contact.html">contact us</a>
       </div>
     </nav>
+    <main>
+      <form action="https://formspree.io/f/xzbwnwpn" method="POST">
+        <div class="register-over-all">
+          <fieldset class="register-fieldset">
+            <legend class="legened-register">
+              הרשמה לאתר - אנא הזן את הפרטים הבאים
+            </legend>
+            <input
+              type="text"
+              name="register-email"
+              id="register-email"
+              placeholder="אנא הזן כתובת מייל"
+            />
+            <input
+              type="text"
+              name="register-first-name"
+              id="register-first-name"
+              placeholder="אנא הזן שם פרטי"
+            />
+            <input
+              type="text"
+              name="register-surname"
+              id="register-surname"
+              placeholder="אנא הזן שם משפחה"
+            />
+            <!-- לבדוק אין נועלים מס' טלפון -->
+            <input
+              type="tel [0-9 9]"
+              name="register-surname"
+              id="register-surname"
+              placeholder="אנא הזן מספר טלפון"
+            />
+            <input
+              type="password"
+              neme=" register-password"
+              id="register-password"
+              placeholder="אנא הזן סיסמה"
+            />
+            <div class="register-gender">
+              מין:
+              <label for="register-gender-male">זכר</label>
+              <input
+                type="radio"
+                name="register-gender"
+                id="register-gender-male"
+              />
+
+              <label for="register-gender-female">נקבה</label>
+              <input
+                type="radio"
+                name="register-gender"
+                id="register-gender-female"
+              />
+            </div>
+
+            <details>
+              <summary class="register-newslatter">
+                הרחב אם ברצונך להצטרף לנויזרלטר שלנו
+              </summary>
+              <label for="register-newslatter-birth-day">בחר תאריך לידה</label>
+              <input
+                type="date"
+                name=" register-newslatter-birth-day"
+                id="register-newslatter-birth-day"
+              />
+              <div>
+                <label for="register-newslatter-file-upload"
+                  >אנא העלה אישור הצטרפות</label
+                >
+                <input
+                  type="file"
+                  name="register-newslatter-file-upload"
+                  id="register-newslatter-file-upload"
+                />
+              </div>
+              <div>
+                <label for="user-preference">בחר תחום מועדף</label>
+
+                <select name="user-preference" id="user-preference">
+                  <option>יונקים</option>
+                  <option>טורפים</option>
+                  <option>חיות מחמד</option>
+                  <option>נופים</option>
+                </select>
+              </div>
+            </details>
+
+            <button type="submit" class="register-submit">העלה</button>
+
+            <button type="reset" class="register-reset">מחק שדות</button>
+          </fieldset>
+        </div>
+      </form>
+    </main>
     <footer>
       <div class="footer">
         <hr />
