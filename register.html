@@ -10,26 +10,32 @@
   <body>
     <header>
       <h1><a class="main-headline" href="./index.html"> my digital zoo</a></h1>
-      <h3 class="second-headline">please register</h3>
     </header>
     <nav>
       <div class="navigator">
-        <a href="./index.html">main page</a>
+        <a href="./index.html">home</a>
         <a href="./register.html">register</a>
+        <a href="./predators.html">predators</a>
+        <a href="./other animals.html">special animals</a>
         <a href="./pets.html">pets</a>
         <a href="./farm animals.html">farm animals</a>
-        <a href="./other animals.html">special animals</a>
         <a href="./trivia.html">trivia questions</a>
         <a href="./contact.html">contact us</a>
       </div>
     </nav>
+    <h3 class="second-headline">please register</h3>
     <main>
-      <form action="https://formspree.io/f/mqkozjnj" method="POST">
+      <form
+        action="https://formspree.io/f/mqkozjnj"
+        method="POST"
+        target="_blank"
+      >
         <div class="register-over-all">
           <fieldset class="register-fieldset">
             <legend class="legened-register">
               הרשמה לאתר - אנא הזן את הפרטים הבאים
             </legend>
+
             <input
               type="text"
               name="register-email"
@@ -50,9 +56,9 @@
             />
             <!-- לבדוק אין נועלים מס' טלפון -->
             <input
-              type="tel [0-9 9]"
-              name="register-surname"
-              id="register-surname"
+              type="text"
+              name="register-phone"
+              id="register-phone"
               placeholder="אנא הזן מספר טלפון"
             />
             <input
@@ -68,6 +74,7 @@
                 type="radio"
                 name="register-gender"
                 id="register-gender-male"
+                value="male"
               />
 
               <label for="register-gender-female">נקבה</label>
@@ -75,6 +82,7 @@
                 type="radio"
                 name="register-gender"
                 id="register-gender-female"
+                value="female"
               />
             </div>
 

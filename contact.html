@@ -10,21 +10,26 @@
   <body>
     <header>
       <h1><a class="main-headline" href="./contact.css"> my digital zoo</a></h1>
-      <h3 class="second-headline">!contact us</h3>
     </header>
     <nav>
       <div class="navigator">
-        <a href="./index.html">main page</a>
+        <a href="./index.html">home</a>
         <a href="./register.html">register</a>
+        <a href="./predators.html">predators</a>
+        <a href="./other animals.html">special animals</a>
         <a href="./pets.html">pets</a>
         <a href="./farm animals.html">farm animals</a>
-        <a href="./other animals.html">special animals</a>
         <a href="./trivia.html">trivia questions</a>
         <a href="./contact.html">contact us</a>
       </div>
     </nav>
+    <h3 class="second-headline">!contact us</h3>
     <main>
-      <form action="https://formspree.io/f/mqkozjnj" method="POST">
+      <form
+        action="https://formspree.io/f/mqkozjnj"
+        method="POST"
+        target="_blank"
+      >
         <div class="contact-fieldset">
           <fieldset>
             <legend class="contact-legend">צור קשר</legend>
@@ -60,12 +65,13 @@
                 <option value="other">אחר</option>
               </select>
             </div>
+
             <textarea
               name="contact-textarea"
               id="contact-textarea"
               cols="80"
               rows="15"
-              placeholder="אנא ציין את פנייתך"
+              placeholder="אנא העלה את פנייתך"
             ></textarea>
 
             <button type="submit" class="contact-submit">העלה</button>
