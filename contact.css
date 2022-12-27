@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
-/* css page for register & index */
+/* css page for contact page */
 .main-headline {
   text-decoration: none;
   color: black;
@@ -15,9 +15,6 @@
 
 body {
   background-color: rgb(77, 199, 83);
-}
-
-div.navigator {
 }
 
 h1 {
@@ -52,51 +49,17 @@ article {
   text-align: center;
 }
 
-.register-fieldset {
-  text-align: right;
-  font-family: "Suez One", serif;
-  font-size: 16px;
+* {
   direction: rtl;
 }
-
-.legened-register {
+.contact-legend {
   text-align: right;
   font-family: "Suez One", serif;
   font-size: 20px;
   direction: rtl;
 }
 
-.register-fieldset summary {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-.register-fieldset label {
-  display: inline-block;
-  margin-top: 10px;
-}
-.register-fieldset-row-2 {
-  margin-top: 15px;
-}
-.register-fieldset input {
-  margin: 8px;
-}
-
-.register-gender {
-  /* display: inline-block; */
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-div.register-over-all input,
-label,
-select {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-div.register-over-all button {
+button {
   font-size: 18px;
   font-weight: bold;
   border-radius: 30px;
@@ -104,15 +67,33 @@ div.register-over-all button {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 30px;
 }
-.register-submit {
+
+.contact-submit {
   background-color: rgb(105, 175, 153);
   margin-right: 25%;
 }
-.register-reset {
+.contact-reset {
   background-color: rgb(193, 70, 70);
   margin-right: 25%;
 }
 
-.contact-fieldset {
-  direction: rtl;
+textarea {
+  display: block;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+div.register-select-and-label {
+  margin-top: 30px;
+  display: block;
+}
+input,
+label,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+}
+::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }

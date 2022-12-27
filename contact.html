@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./contact.css" />
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,8 +9,8 @@
   </head>
   <body>
     <header>
-      <h1><a class="main-headline" href="./index.html"> my digital zoo</a></h1>
-      <h3 class="second-headline">contact us!</h3>
+      <h1><a class="main-headline" href="./contact.css"> my digital zoo</a></h1>
+      <h3 class="second-headline">!contact us</h3>
     </header>
     <nav>
       <div class="navigator">
@@ -23,6 +23,58 @@
         <a href="./contact.html">contact us</a>
       </div>
     </nav>
+    <main>
+      <form action="https://formspree.io/f/xzbwnwpn" method="POST">
+        <div class="contact-fieldset">
+          <fieldset>
+            <legend class="contact-legend">צור קשר</legend>
+            <p>אנא מלא את הפרטים ולחץ על שליחה, נשמח לעמוד לשרותך :)</p>
+            <input
+              type="text"
+              name="contact-first-name"
+              id="contact-first-name"
+              placeholder="הזן שם פרטי"
+            />
+            <input
+              type="text"
+              name="contact-surname"
+              id="contact-surname"
+              placeholder="הזן שם משפחה"
+            />
+            <input
+              type="text"
+              name="contact-email"
+              id="contact-email"
+              placeholder="הזן כתובת מייל"
+            />
+            <div class="register-select-and-label">
+              <label for="contact-topic-selection">אנא בחר נושא לפנייה</label>
+              <select
+                name="contact-topic-selection"
+                id="contact-topic-selection"
+              >
+                <option value="website">אתר</option>
+                <option value="content">תוכן</option>
+                <option value="newsletter">ניוזלטר</option>
+                <option value="Customer Service">שירות לקוחות ואירועים</option>
+                <option value="other">אחר</option>
+              </select>
+            </div>
+            <textarea
+              name="contact-textarea"
+              id="contact-textarea"
+              cols="80"
+              rows="15"
+              placeholder="אנא ציין את פנייתך"
+            ></textarea>
+
+            <button type="submit" class="contact-submit">העלה</button>
+
+            <button type="reset" class="contact-reset">מחק שדות</button>
+          </fieldset>
+        </div>
+      </form>
+    </main>
     <footer>
       <div class="footer">
         <hr />
